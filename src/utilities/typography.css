@@ -1,0 +1,151 @@
+/* === HEADING UTILS === */
+.text-heading-xl {
+  font-size: var(--font-size-6xl);
+  font-weight: bold;
+}
+
+h1, .text-heading-h1 {
+  font-size: var(--text-heading-h1-size);
+  font-weight: var(--text-heading-h1-weight);
+  line-height: var(--text-heading-h1-line);
+}
+
+h2, .text-heading-h2 {
+  font-size: var(--text-heading-h2-size);
+  font-weight: var(--text-heading-h2-weight);
+  line-height: var(--text-heading-h2-line);
+}
+
+h3, .text-heading-h3 {
+  font-size: var(--text-heading-h3-size);
+  font-weight: var(--text-heading-h3-weight);
+  line-height: var(--text-heading-h3-line);
+}
+
+h4, .text-heading-h4 {
+  font-size: var(--text-heading-h4-size);
+  font-weight: var(--text-heading-h4-weight);
+  line-height: var(--text-heading-h4-line);
+}
+
+h5, .text-heading-h5 {
+  font-size: var(--text-heading-h5-size);
+  font-weight: var(--text-heading-h5-weight);
+  line-height: var(--text-heading-h5-line);
+}
+
+h6, .text-heading-h6 {
+  font-size: var(--text-heading-h6-size);
+  font-weight: var(--text-heading-h6-weight);
+  line-height: var(--text-heading-h6-line);
+}
+
+/* === BODY UTILS === */
+.text-body-xl {
+  font-size: var(--text-body-xl-size);
+  font-weight: var(--text-body-xl-weight);
+  line-height: var(--text-body-xl-line);
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg-size);
+  font-weight: var(--text-body-lg-weight);
+  line-height: var(--text-body-lg-line);
+}
+
+.text-body-md {
+  font-size: var(--text-body-md-size);
+  font-weight: var(--text-body-md-weight);
+  line-height: var(--text-body-md-line);
+}
+
+.text-body-sm {
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-body-sm-weight);
+  line-height: var(--text-body-sm-line);
+}
+
+.text-body-xs {
+  font-size: var(--text-body-xs-size);
+  font-weight: var(--text-body-xs-weight);
+  line-height: var(--text-body-xs-line);
+}
+
+/* === LABEL === */
+.text-label {
+  font-size: var(--text-label-size);
+  font-weight: var(--text-label-weight);
+  line-height: var(--text-label-line);
+  letter-spacing: var(--text-label-tracking);
+  text-transform: var(--text-label-transform);
+}
+
+/* === FONT WEIGHTS === */
+.text-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.text-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.text-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* === FONT STYLES === */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+/* == ALIGNMENT === */
+
+.text-align--center {
+  text-align: center;
+}
+
+
+/* === TEXT COLOR === */
+.text-muted {
+  color: var(--text-muted-color);
+}
+
+.text-primary {
+  color: var(--color-text);
+}
+
+.text-subtle {
+  color: var(--color-text-subtle);
+}
+
+.text-accent {
+  color: var(--color-text-accent);
+}
+
+.text-inverse {
+  color: var(--color-text-inverse);
+}

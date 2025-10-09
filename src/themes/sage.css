@@ -1,0 +1,61 @@
+[data-theme="sage"] {
+
+  /* === BRAND === */
+    --color-brand-primary: var(--color-emerald-700);
+    --color-brand-primary-hover: var(--color-emerald-800);
+    --color-brand-primary-muted: var(--color-emerald-100);
+    --color-brand-primary-contrast: var(--color-peach-300);
+
+    --color-brand-accent: color-mix(in oklch, var(--color-peach-400) 90%, var(--color-stone-400) 100%);
+    --color-brand-accent-hover: var(--color-peach-300);
+    --color-brand-accent-muted: var(--color-orange-100);
+    --color-brand-accent-contrast: var(--color-white);
+
+  /* === PRIMITIVES === */
+
+    /* === Backgrounds === */
+    --color-bg: var(--color-peach-50);
+    --color-bg-subtle: var(--color-peach-100);
+    --color-bg-muted: var(--color-peach-200);
+    --color-bg-inverse: var(--color-peach-100);
+
+    /* === Surfaces === */
+    --color-surface: var(--color-peach-50);
+    --color-surface-muted: var(--color-peach-200);
+
+    /* === Overlays === */
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-overlay-light: rgba(255, 255, 255, 0.5);
+
+    /* === Text === */
+    --color-text: var(--color-neutral-600);
+    --color-text-muted: var(--color-neutral-500);
+    --color-text-subtle: var(--color-neutral-400);
+    --color-text-inverse: var(--color-neutral-50);
+    --color-text-accent: var(--color-brand-primary);
+
+    /* === Heading === */
+    --color-heading: var(--color-brand-primary);
+    --color-heading-muted: var(--color-neutral-600);
+    --color-heading-subtle: var(--color-neutral-500);
+    --color-heading-inverse: var(--color-neutral-50);
+    --color-heading-accent: var(--color-brand-primary);
+
+    /* === Borders / Strokes === */
+    --opacity-border-subtle: 0.3;
+    --opacity-border: 0.4;
+    --opacity-border-strong: 0.8;
+    --color-border: color-mix(in oklch, var(--color-peach-200) calc(var(--opacity-border) * 100%), transparent);
+    --color-border-subtle: color-mix(in oklch, var(--color-peach-100) calc(var(--opacity-border-subtle) * 100%), transparent);
+    --color-border-strong: color-mix(in oklch, var(--color-peach-300) calc(var(--opacity-border-strong) * 100%), transparent);
+    --color-border-inverted: color-mix(in oklch, var(--color-peach-950) calc(var(--opacity-border-strong) * 100%), transparent);
+
+  /* === COMPONENTS === */
+
+    /* Button - Primary */
+    --color-button-primary-bg: var(--color-brand-accent);
+    --color-button-primary-text: var(--color-brand-accent-contrast);
+    --color-button-primary-hover: var(--color-brand-accent-hover);
+    --color-button-primary-border: var(--color-brand-accent-hover);
+
+}

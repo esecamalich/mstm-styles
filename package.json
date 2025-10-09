@@ -1,0 +1,50 @@
+{
+  "name": "@mstm/mstm-styles",
+  "version": "0.1.0",
+  "description": "Styles to Make Stuff That Matters",
+  "private": true,
+  "keywords": [
+    "css",
+    "design-system",
+    "tokens",
+    "global-styles",
+    "astro",
+    "themes",
+    "utilities"
+  ],
+  "homepage": "https://github.com/esecamalich/makeStuffThatMatters#readme",
+  "bugs": {
+    "url": "https://github.com/esecamalich/makeStuffThatMatters/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esecamalich/makeStuffThatMatters.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Sergio Camalich",
+  "type": "module",
+  "main": "src/global.css",
+  "exports": {
+    ".": "./src/global.css",
+    "./themes/base": "./src/themes/base.css",
+    "./themes/dark": "./src/themes/dark.css",
+    "./themes/sage": "./src/themes/sage.css",
+    "./tokens/colors": "./src/tokens/colors.css",
+    "./tokens/spacing": "./src/tokens/spacing.css",
+    "./tokens/radius": "./src/tokens/radius.css",
+    "./tokens/shadows": "./src/tokens/shadows.css",
+    "./tokens/size": "./src/tokens/size.css",
+    "./tokens/typography": "./src/tokens/typography.css",
+    "./utilities/buttons": "./src/utilities/buttons.css",
+    "./utilities/color": "./src/utilities/color.css",
+    "./utilities/layout": "./src/utilities/layout.css",
+    "./utilities/spacers": "./src/utilities/spacers.css",
+    "./utilities/typography": "./src/utilities/typography.css"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  }
+}

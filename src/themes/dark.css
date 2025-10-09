@@ -1,0 +1,53 @@
+[data-theme="dark"] {
+
+  /* === BRAND === */
+    --color-brand-primary: var(--color-emerald-600);
+    --color-brand-primary-hover: var(--color-emerald-700);
+    --color-brand-primary-muted: var(--color-emerald-100);
+    --color-brand-primary-contrast: var(--color-amber-300);
+
+    --color-brand-accent: var(--color-emerald-600);
+    --color-brand-accent-hover: var(--color-emerald-700);
+    --color-brand-accent-muted: var(--color-emerald-100);
+    --color-brand-accent-contrast: var(--color-amber-300);
+
+  /* === PRIMITIVES === */
+
+    /* === Backgrounds === */
+      --color-bg: var(--color-neutral-950);
+      --color-bg-subtle: var(--color-neutral-900);
+      --color-bg-muted: var(--color-neutral-800);
+      --color-bg-inverse: var(--color-neutral-100);
+
+    /* === Surfaces === */
+      --color-surface: var(--color-neutral-800);
+      --color-surface-muted: var(--color-neutral-950);
+
+    /* === Text === */
+      --color-text: var(--color-neutral-300);
+      --color-text-muted: var(--color-neutral-400);
+      --color-text-subtle: var(--color-neutral-500);
+      --color-text-inverse: var(--color-neutral-50);
+      --color-text-accent: var(--color-brand-primary);
+
+    /* === Heading === */
+    --color-heading: var(--color-neutral-50);
+    --color-heading-muted: var(--color-neutral-600);
+    --color-heading-subtle: var(--color-neutral-500);
+    --color-heading-inverse: var(--color-neutral-50);
+    --color-heading-accent: var(--color-brand-primary);
+
+    /* === Borders / Strokes === */
+      --color-border: color-mix(in oklch, var(--color-neutral-700) calc(var(--opacity-border) * 100%), transparent);
+      --color-border-subtle: color-mix(in oklch, var(--color-neutral-700) calc(var(--opacity-border-subtle) * 100%), transparent);
+      --color-border-strong: color-mix(in oklch, var(--color-neutral-700) calc(var(--opacity-border-strong) * 100%), transparent);
+      --color-border-inverted: color-mix(in oklch, var(--color-neutral-50) calc(var(--opacity-border-strong) * 100%), transparent);
+
+     /* Inputs */
+      --color-input-bg: color-mix(in oklch, var(--color-neutral-700) 50%, transparent);
+      --color-input-border: color-mix(in oklch, var(--color-neutral-600) 50%, transparent);
+      --color-input-border-hover: color-mix(in oklch, var(--color-neutral-500) 50%, transparent);
+      --color-input-text: var(--color-text);
+      --color-placeholder: var(--color-neutral-400);
+
+}

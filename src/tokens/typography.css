@@ -1,0 +1,98 @@
+:root {
+  /* === FONT FAMILY === */
+  --font-sans: 'Inter', sans-serif;
+
+  /* === FONT SIZES === */
+  --font-size-2xs: 0.5rem;     /* 8px */
+  --font-size-xs:  0.75rem;  /* 12px */
+  --font-size-sm:  0.875rem;    /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg:  clamp(1rem, 1.2vw, 1.125rem);     /* 16px → 18px */
+  --font-size-xl:  clamp(1.125rem, 1.4vw, 1.25rem);  /* 18px → 20px */
+  --font-size-2xl: clamp(1.25rem, 1.8vw, 1.5rem);    /* 20px → 24px */
+  --font-size-3xl: clamp(1.5rem, 2.5vw, 2rem);       /* 24px → 32px */
+  --font-size-4xl: clamp(2rem, 3vw, 2.5rem);         /* 32px → 40px */
+  --font-size-5xl: clamp(2.5rem, 4vw, 3rem);         /* 40px → 48px */
+  --font-size-6xl: clamp(3rem, 5vw, 4rem);           /* 48px → 64px */
+  --font-size-7xl: clamp(3.5rem, 6vw, 4.5rem);       /* 56px → 72px */
+  --font-size-8xl: clamp(4.5rem, 8vw, 6rem);         /* 72px → 96px */
+  --font-size-9xl: clamp(6rem, 10vw, 8rem);          /* 96px → 128px */
+
+  /* === FONT WEIGHTS === */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* === LINE HEIGHTS === */
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.75;
+
+  /* === LETTER SPACING === */
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+
+  /* === HEADING STYLES === */
+  --text-heading-h1-size: var(--font-size-5xl);
+  --text-heading-h1-weight: var(--font-weight-bold);
+  --text-heading-h1-line: var(--line-height-tight);
+
+  --text-heading-h2-size: var(--font-size-3xl);
+  --text-heading-h2-weight: var(--font-weight-bold);
+  --text-heading-h2-line: var(--line-height-tight);
+
+  --text-heading-h3-size: var(--font-size-2xl);
+  --text-heading-h3-weight: var(--font-weight-bold);
+  --text-heading-h3-line: var(--line-height-tight);
+
+  --text-heading-h4-size: var(--font-size-xl);
+  --text-heading-h4-weight: var(--font-weight-semibold);
+  --text-heading-h4-line: var(--line-height-tight);
+
+  --text-heading-h5-size: var(--font-size-lg);
+  --text-heading-h5-weight: var(--font-weight-semibold);
+  --text-heading-h5-line: var(--line-height-tight);
+  
+  --text-heading-h6-size: var(--font-size-md);
+  --text-heading-h6-weight: var(--font-weight-semibold);
+  --text-heading-h6-line: var(--line-height-tight);
+
+  /* === BODY TEXT === */
+  --text-body-xl-size: var(--font-size-xl);
+  --text-body-xl-weight: var(--font-weight-normal);
+  --text-body-xl-line: var(--line-height-lg);
+
+  --text-body-lg-size: var(--font-size-lg);
+  --text-body-lg-weight: var(--font-weight-normal);
+  --text-body-lg-line: var(--line-height-lg);
+  
+  --text-body-md-size: var(--font-size-base);
+  --text-body-md-weight: var(--font-weight-normal);
+  --text-body-md-line: var(--line-height-base);
+
+  --text-body-sm-size: var(--font-size-sm);
+  --text-body-sm-weight: var(--font-weight-normal);
+  --text-body-sm-line: var(--line-height-base);
+
+  --text-body-xs-size: var(--font-size-xs);
+  --text-body-xs-weight: var(--font-weight-normal);
+  --text-body-xs-line: var(--line-height-base);
+
+  /* === LABELS / UI TEXT === */
+  --text-label-size: var(--font-size-xs);
+  --text-label-weight: var(--font-weight-medium);
+  --text-label-line: var(--line-height-base);
+  --text-label-tracking: var(--tracking-wide);
+  --text-label-transform: uppercase;
+
+  /* === MUTED / SECONDARY TEXT === */
+  --text-muted-color: var(--color-text-muted);
+
+}

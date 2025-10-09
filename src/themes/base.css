@@ -1,0 +1,112 @@
+:root {
+
+  /* === BRAND === */
+    --color-brand-primary: var(--color-emerald-600);
+    --color-brand-primary-hover: var(--color-emerald-700);
+    --color-brand-primary-muted: var(--color-emerald-100);
+    --color-brand-primary-contrast: var(--color-white);
+
+    --color-brand-accent: var(--color-amber-300);
+    --color-brand-accent-hover: var(--color-amber-400);
+    --color-brand-accent-muted: var(--color-amber-100);
+    --color-brand-accent-contrast: var(--color-black);
+
+
+  /* === PRIMITIVES === */
+
+    /* === Backgrounds === */
+    --color-bg: var(--color-white);
+    --color-bg-subtle: var(--color-neutral-100);
+    --color-bg-muted: var(--color-neutral-200);
+    --color-bg-inverse: var(--color-neutral-100);
+
+    /* === Surfaces === */
+    --color-surface: var(--color-neutral-50);
+    --color-surface-muted: var(--color-neutral-200);
+
+    /* === Overlays === */
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-overlay-light: rgba(255, 255, 255, 0.5);
+
+    /* === Text === */
+    --color-text: var(--color-neutral-900);
+    --color-text-muted: var(--color-neutral-600);
+    --color-text-subtle: var(--color-neutral-500);
+    --color-text-inverse: var(--color-neutral-50);
+    --color-text-accent: var(--color-brand-primary);
+
+    /* === Heading === */
+    --color-heading: var(--color-neutral-900);
+    --color-heading-muted: var(--color-neutral-600);
+    --color-heading-subtle: var(--color-neutral-500);
+    --color-heading-inverse: var(--color-neutral-50);
+    --color-heading-accent: var(--color-brand-primary);
+
+    /* === Borders / Strokes === */
+    --opacity-border-subtle: 0.3;
+    --opacity-border: 0.4;
+    --opacity-border-strong: 0.8;
+    --color-border: color-mix(in oklch, var(--color-neutral-200) calc(var(--opacity-border) * 100%), transparent);
+    --color-border-subtle: color-mix(in oklch, var(--color-neutral-100) calc(var(--opacity-border-subtle) * 100%), transparent);
+    --color-border-strong: color-mix(in oklch, var(--color-neutral-300) calc(var(--opacity-border-strong) * 100%), transparent);
+    --color-border-inverted: color-mix(in oklch, var(--color-neutral-950) calc(var(--opacity-border-strong) * 100%), transparent);
+
+    /* === States === */
+    --color-success: var(--color-green-500);
+    --color-warning: var(--color-amber-500);
+    --color-error: var(--color-red-500);
+    --color-disabled: var(--color-neutral-400);
+
+
+  /* === COMPONENTS === */
+
+    /* Button - Primary */
+    --color-button-primary-bg: var(--color-brand-primary);
+    --color-button-primary-text: var(--color-brand-primary-contrast);
+    --color-button-primary-hover: var(--color-brand-primary-hover);
+    --color-button-primary-border: var(--color-brand-primary-hover);
+
+    /* Button - Accent */
+    --color-button-accent-bg: var(--color-brand-accent);
+    --color-button-accent-text: var(--color-brand-accent-contrast);
+    --color-button-accent-hover: var(--color-brand-accent-hover);
+    --color-button-accent-border: var(--color-brand-accent-hover);
+
+    /* Button - Destructive */
+    --color-button-danger-bg: var(--color-red-600);
+    --color-button-danger-text: var(--color-neutral-50);
+    --color-button-danger-hover: var(--color-red-700);
+    --color-button-danger-border: var(--color-red-700);
+
+    /* Button - Outline */
+    --color-button-outline-bg: transparent;
+    --color-button-outline-text: var(--color-brand-primary);
+    --color-button-outline-hover: var(--color-brand-primary-hover);
+    --color-button-outline-border: var(--color-brand-primary);
+
+    /* Button - Subtle */
+    --color-button-subtle-bg: var(--color-neutral-100);
+    --color-button-subtle-text: var(--color-neutral-900);
+    --color-button-subtle-hover: var(--color-neutral-200);
+    --color-button-subtle-border: transparent;
+
+    /* Button - Inactive */
+    --color-button-disabled-bg: var(--color-neutral-100);
+    --color-button-disabled-text: var(--color-neutral-400);
+    --color-button-disabled-hover: var(--color-neutral-100);
+    --color-button-disabled-border: var(--color-neutral-200);
+
+    /* Button - Ghost */
+    --color-button-ghost-bg: transparent;
+    --color-button-ghost-text: var(--color-neutral-900);
+    --color-button-ghost-hover: var(--color-neutral-100);
+    --color-button-ghost-border: transparent;
+
+    /* Inputs */
+    --color-input-bg: var(--color-neutral-50);
+    --color-input-border: var(--color-neutral-200);
+    --color-input-border-hover: var(--color-neutral-300);
+    --color-input-text: var(--color-neutral-900);
+    --color-placeholder: var(--color-neutral-400);
+
+}
