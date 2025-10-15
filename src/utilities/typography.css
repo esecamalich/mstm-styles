@@ -137,7 +137,7 @@ h6, .text-heading-h6 {
 
 /* === TEXT COLOR === */
 .text-muted {
-  color: var(--text-muted-color);
+  color: var(--color-text-muted);
 }
 
 .text-primary {
