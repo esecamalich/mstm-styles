@@ -65,6 +65,10 @@
   --text-heading-h6-line: var(--line-height-tight);
 
   /* === BODY TEXT === */
+  --text-body-2xl-size: var(--font-size-2xl);
+  --text-body-2xl-weight: var(--font-weight-normal);
+  --text-body-2xl-line: var(--line-height-lg);
+  
   --text-body-xl-size: var(--font-size-xl);
   --text-body-xl-weight: var(--font-weight-normal);
   --text-body-xl-line: var(--line-height-lg);
