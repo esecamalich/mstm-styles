@@ -1,97 +1,163 @@
-# @mstm/mstm-styles
 
-Shared CSS tokens, global styles, and utilities for Make Stuff That Matters projects. Install it wherever you need consistent theming, spacing, and component primitives.
+# mstm-styles
+
+This repository contains the official mstm-styles package (shared CSS tokens, global styles, themes and utility classes) used by Make Stuff That Matters projects.
+
+Repository: https://github.com/esecamalich/mstm-styles
+
+Quick summary:
+- Centralized design tokens in `src/tokens/` (colors, spacing, typography, etc.)
+- Theme layers in `src/themes/` (base, dark, sage)
+- Utility and component primitives in `src/utilities/`
+- A single entrypoint `src/global.css` that composes tokens, utilities and themes for a default bundle
 
 ## Installation
 
-### From this monorepo
+Install directly from the GitHub repository (recommended for latest changes):
 
 ```bash
-npm install --save file:packages/mstm-styles
+npm install github:esecamalich/mstm-styles#main
 ```
 
-### From a remote Git source
+If the package is published to a registry in the future, install it as a normal scoped package:
 
 ```bash
-npm install github:esecamalich/makeStuffThatMatters#main -- @mstm/mstm-styles
+npm install @mstm/mstm-styles
 ```
 
-If you publish the package to a private registry, install it as you would any scoped dependency:
+For local development (consume the local copy from another project):
 
 ```bash
-npm install --save @mstm/mstm-styles
+npm install --save file:../path-to-local/mstm-styles
 ```
 
 ## Usage
 
-The package default export is `src/global.css`, which already imports all tokens and utilities. In Astro, add a side-effect import in your root layout:
+The package exposes `src/global.css` as the default convenience bundle. Import it as a side effect in your app's root (JS/TS) or framework entry:
 
-```astro
----
-import '@mstm/mstm-styles';
----
+```js
+// JavaScript / frameworks
+import 'mstm-styles/src/global.css';
+
+/* Or, if installed from GitHub and your bundler resolves package paths: */
+import 'github:esecamalich/mstm-styles/src/global.css';
 ```
 
-### Themes
-
-Core theme variables live in `src/themes/`. `global.css` imports every theme so they are all available by default. If you want to include only one theme layer or compose your own bundle:
+You can also import individual token files or theme layers if you want a smaller, composed bundle:
 
 ```css
-@import '@mstm/mstm-styles/src/tokens/colors.css';
-@import '@mstm/mstm-styles/src/tokens/spacing.css';
-@import '@mstm/mstm-styles/src/utilities/layout.css';
-@import '@mstm/mstm-styles/src/themes/sage.css'; /* or dark.css, base.css */
+@import 'mstm-styles/src/tokens/colors.css';
+@import 'mstm-styles/src/tokens/spacing.css';
+@import 'mstm-styles/src/utilities/layout.css';
+@import 'mstm-styles/src/themes/sage.css'; /* choose base, dark or sage */
 ```
 
-### Direct exports
+Notes:
+- Depending on how you install (npm registry vs GitHub source) and your bundler configuration, you may need to reference the `src/` paths directly. The repository ships the raw CSS source files.
 
-An exports map is configured so you can reach common sub-entries without touching internal paths:
+## Project structure
 
-```css
-@import '@mstm/mstm-styles/themes/dark';
-@import '@mstm/mstm-styles/tokens/colors';
-@import '@mstm/mstm-styles/utilities/layout';
-```
+Top-level `src/` contains the library source:
 
-If you want to compose a custom bundle, mix and match from these public entry points.
+- `src/global.css` — main composition file that imports tokens, utilities and themes
+- `src/themes/` — theme layer files (`base.css`, `dark.css`, `sage.css`)
+- `src/tokens/` — design tokens (`colors.css`, `spacing.css`, `typography.css`, etc.)
+- `src/utilities/` — utility classes and small component primitives (`buttons.css`, `layout.css`, `typography.css`)
+
+Use these files as building blocks for composing styles in consuming projects.
 
 ## Development
 
-### Working locally
+Make edits directly in `src/`. Recommended local workflow:
 
-1. Make CSS changes inside `packages/mstm-styles/src/` (this is the single source of truth).
-2. In the root project, reinstall the dependency so it picks up local edits:
-   ```bash
-   npm install --save file:packages/mstm-styles
-   ```
-3. Import the bundle in your Astro layout:
-   ```astro
-   ---
-   import '@mstm/mstm-styles';
-   ---
-   ```
-4. Run `npm run dev` to verify the consuming app renders correctly.
+1. Create a branch for your change: `git checkout -b feat/your-change`.
+2. Edit the relevant CSS files inside `src/`.
+3. Run any local checks or your app's dev server to verify the styles in-context.
+4. Commit and push your branch and open a pull request against `main`.
 
-### Release checklist
+If you need to test these styles from another local project, use one of the following:
 
-Run these steps from `packages/mstm-styles/` whenever you’re ready to share updates:
+- Install via local path: `npm install --save file:../path-to-local/mstm-styles`
+- Or use `npm link` from the `mstm-styles` folder and `npm link mstm-styles` in the consumer project.
 
-1. `npm test` (currently a no-op) — replace with real lint/build checks when available.
-2. `npm pack` — confirms only the right files are included.
-3. `npm version patch|minor|major` — choose the appropriate bump.
-4. Commit the changes, push, and tag as needed.
-5. Publish or distribute:
-   - Private registry: `npm publish --access=restricted`
-   - Git/tarball consumers: push the tag and reinstall using the tag or generated `.tgz`
+## Contributing
 
-### Updating consuming projects
+Contributions are welcome via pull requests. Please include a short description of the change and any visual diffs if applicable.
 
-- Using a published version: run `npm install @mstm/mstm-styles@latest` (or `npm update`) in each project.
-- Using a Git source: reinstall with the new tag, e.g. `npm install github:esecamalich/makeStuffThatMatters#v0.1.1`.
-- Using a local file link: rerun `npm install file:packages/mstm-styles` so npm refreshes the symlinked package.
+Suggested PR checklist:
+- Update or add token documentation when changing tokens
+- Keep changes focused and small (tokens, utilities, or themes)
+- Include a changelog entry in your PR description
 
-Keep all edits centralized here; downstream projects should never modify their own copies of these styles.
+## Updating the dependency from consuming repos
+
+If you maintain projects that consume `mstm-styles`, here are recommended steps to update the dependency depending on how the project installed it.
+
+1) Installed from npm registry (future)
+
+- Update package.json in the consuming repo to the new version and run:
+
+```bash
+npm install @mstm/mstm-styles@latest
+```
+
+- Or run `npm update @mstm/mstm-styles`.
+
+2) Installed directly from GitHub (recommended for latest changes)
+
+- To update to the latest main branch commit:
+
+```bash
+npm install github:esecamalich/mstm-styles#main
+```
+
+- To update to a specific tag/release replace `#main` with the tag, e.g. `#v1.2.3`.
+
+3) Installed via a Git URL in package.json
+
+- If package.json references a specific commit or branch, update the reference and run `npm install`.
+
+4) Local file install (file:../path)
+
+- Reinstall from the updated local path so npm refreshes the package contents:
+
+```bash
+npm install --save file:../path-to-local/mstm-styles
+```
+
+- If you prefer a symlinked workflow, use `npm link` (see below).
+
+5) Using npm link (local development)
+
+- In the `mstm-styles` repo root run:
+
+```bash
+npm link
+```
+
+- In the consuming repo run:
+
+```bash
+npm link mstm-styles
+```
+
+- When you make local changes in `mstm-styles`, most bundlers will pick them up automatically. If not, rebuild the consumer app or clear caches.
+
+6) Verification after updating
+
+- Clear node_modules and reinstall in the consumer project when in doubt:
+
+```bash
+rm -rf node_modules package-lock.json && npm install
+```
+
+- Verify the imported CSS is the expected version (search for tokens or theme variables you changed) and run the consumer project's dev server to visually confirm.
+
+Tips and notes
+- Prefer pinned tags or released versions for production deployments to avoid accidental breaking changes from main branch updates.
+- For CI, prefer installing by tag or from the registry to get reproducible installs.
+- If consumers import `src/` paths directly, ensure any changes that rename or move files are reflected in consuming repos.
 
 ## License
 
-UNLICENSED – All rights reserved. Contact Sergio Camalich for usage outside internal projects.
+UNLICENSED — all rights reserved. Contact the repository owner for reuse outside internal projects.
