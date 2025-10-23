@@ -58,4 +58,10 @@
     --color-button-primary-hover: var(--color-brand-accent-hover);
     --color-button-primary-border: var(--color-brand-accent-hover);
 
+    /* Button - Outline */
+    --color-button-outline-bg: transparent;
+    --color-button-outline-text: var(--color-brand-accent);
+    --color-button-outline-hover: var(--color-brand-accent-hover);
+    --color-button-outline-border: var(--color-brand-accent);
+
 }
