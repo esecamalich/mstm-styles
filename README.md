@@ -158,6 +158,19 @@ Tips and notes
 - For CI, prefer installing by tag or from the registry to get reproducible installs.
 - If consumers import `src/` paths directly, ensure any changes that rename or move files are reflected in consuming repos.
 
+## Bumping the package version
+
+When you need to bump the version for a release or to align with dependency updates, keep both `package.json` and `package-lock.json` in sync and commit the lockfile change through git:
+
+1. Start from an up-to-date `main`: `git checkout main && git pull`.
+2. Create a release branch: `git checkout -b chore/release-vX.Y.Z`.
+3. Run `npm version patch` (or `minor`/`major` as needed). This updates `package.json` and `package-lock.json`. Use `--no-git-tag-version` if you plan to create the tag later.
+4. Review the diff to confirm only the expected version numbers changed: `git diff package.json package-lock.json`.
+5. Stage the files and commit: `git add package.json package-lock.json && git commit -m "chore: release vX.Y.Z"`.
+6. Push the branch and open a PR. After merge, tag the commit if desired: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+
+If the lockfile drifts (for example, someone ran `npm install` with an older Node/npm), you can reset it to the committed version before starting: `git checkout -- package-lock.json`.
+
 ## License
 
 UNLICENSED — all rights reserved. Contact the repository owner for reuse outside internal projects.
