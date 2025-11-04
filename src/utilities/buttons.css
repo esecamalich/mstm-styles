@@ -69,6 +69,13 @@
   background-color: var(--color-button-subtle-hover);
 }
 
+/* Button - Link */
+.button--link {
+  box-shadow: none;
+  padding: 0;
+  background-color: transparent;
+}
+
 /* Button - Ghost */
 .button--ghost {
   background-color: var(--color-button-ghost-bg);
