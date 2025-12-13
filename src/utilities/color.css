@@ -13,3 +13,19 @@
 .color-bg-accent {
   background-color: var(--color-brand-accent);
 }
+
+.color-text-black {
+    color: var(--color-black);
+}
+
+.color-text-white {
+  color: var(--color-black);
+}
+
+a:hover .color-text-black {
+    color: var(--color-brand-accent);
+}
+
+.color-text-subtle {
+    color: var(--color-text-subtle)
+}
