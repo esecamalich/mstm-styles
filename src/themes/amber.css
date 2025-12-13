@@ -1,0 +1,91 @@
+[data-theme='amber'] {
+  --color-brand-primary: var(--color-amber-300);
+  --color-brand-primary-hover: var(--color-amber-400);
+  --color-brand-primary-muted: var(--color-neutral-100);
+  --color-brand-primary-contrast: var(--color-blue-600);
+
+  --color-brand-accent: var(--color-amber-600);
+  --color-brand-accent-hover: var(--color-amber-700);
+  --color-brand-accent-muted: var(--color-amber-100);
+  --color-brand-accent-contrast: var(--color-white);
+
+  /* === PRIMITIVES === */
+
+    /* === Backgrounds === */
+    --color-bg: var(--color-amber-50);
+    --color-bg-subtle: var(--color-amber-100);
+    --color-bg-muted: var(--color-amber-200);
+    --color-bg-inverse: var(--color-amber-900);
+
+    /* === Surfaces === */
+    --color-surface: var(--color-amber-100);
+    --color-surface-subtle: color-mix(in oklch, var(--color-amber-100) 30%, transparent);
+    --color-surface-muted: var(--color-amber-200);
+
+    /* === Text === */
+    --color-text: var(--color-amber-950);
+    --color-text-muted: var(--color-neutral-600);
+    --color-text-subtle: var(--color-neutral-500);
+    --color-text-inverse: var(--color-amber-50);
+    --color-text-accent: var(--color-brand-accent);
+
+    /* === Borders / Strokes === */
+    --color-border: color-mix(in oklch, var(--color-amber-300) calc(var(--opacity-border) * 100%), transparent);
+    --color-border-subtle: color-mix(in oklch, var(--color-amber-300) calc(var(--opacity-border-subtle) * 100%), transparent);
+    --color-border-strong: color-mix(in oklch, var(--color-amber-300) calc(var(--opacity-border-strong) * 100%), transparent);
+    --color-border-inverted: color-mix(in oklch, var(--color-amber-950) calc(var(--opacity-border-strong) * 100%), transparent);
+
+    /* === Shadows === */
+    --shadow-color-subtle: color-mix(in oklch, var(--color-amber-500) 10%, transparent);
+    --shadow-color-soft: color-mix(in oklch, var(--color-amber-500) 30%, transparent);
+    --shadow-color-medium: color-mix(in oklch, var(--color-amber-500) 50%, transparent);
+    --shadow-color-strong: color-mix(in oklch, var(--color-amber-500) 80%, transparent);
+
+    /* XS — ultra subtle border-style shadow */
+    --shadow-xs: 0 1px 2px 0 var(--shadow-color-subtle);
+
+    /* SM — input hovers, small lifts */
+    --shadow-sm:
+      0 1px 3px 0 var(--shadow-color-soft),
+      0 1px 2px -1px var(--shadow-color-soft);
+
+    /* MD — cards, tooltips */
+    --shadow-md:
+      0 4px 6px -1px var(--shadow-color-medium),
+      0 2px 4px -2px var(--shadow-color-soft);
+
+    /* LG — modals, panels */
+    --shadow-lg:
+      0 10px 15px -3px var(--shadow-color-medium),
+      0 4px 6px -4px var(--shadow-color-soft);
+
+    /* XL — max elevation */
+    --shadow-xl:
+      0 20px 25px -5px var(--shadow-color-strong),
+      0 8px 10px -6px var(--shadow-color-medium);
+
+    /* Inset — for inputs or containers */
+    --shadow-inset: inset 0 1px 2px 0 var(--shadow-color-subtle);
+
+  /* === COMPONENTS === */
+
+    /* Button - Primary */
+    --color-button-primary-bg: var(--color-brand-accent);
+    --color-button-primary-text: var(--color-brand-accent-contrast);
+    --color-button-primary-hover: var(--color-brand-accent-hover);
+    --color-button-primary-border: var(--color-brand-accent-hover);
+
+    /* Button - Inactive */
+    --color-button-disabled-bg: var(--color-stone-100);
+    --color-button-disabled-text: var(--color-stone-300);
+    --color-button-disabled-hover: var(--color-stone-100);
+    --color-button-disabled-border: var(--color-stone-100);
+
+    /* Inputs */
+    --color-input-bg: var(--color-white);
+    --color-input-border: var(--color-amber-200);
+    --color-input-border-hover: var(--color-amber-300);
+    --color-input-text: var(--color-amber-900);
+    --color-placeholder: var(--color-amber-400);
+
+}
