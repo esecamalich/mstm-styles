@@ -141,8 +141,8 @@ table {
 
 /* Selection */
 ::selection {
-  background: var(--color-brand-primary-hover);
-  color: var(--color-brand-primary-contrast);
+  background: var(--color-brand-primary-muted);
+  color: inherit;
 }
 
 hr {
