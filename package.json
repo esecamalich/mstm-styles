@@ -29,6 +29,7 @@
     "./themes/base": "./src/themes/base.css",
     "./themes/dark": "./src/themes/dark.css",
     "./themes/sage": "./src/themes/sage.css",
+    "./themes/amber": "./src/themes/amber.css",
     "./tokens/colors": "./src/tokens/colors.css",
     "./tokens/spacing": "./src/tokens/spacing.css",
     "./tokens/radius": "./src/tokens/radius.css",
