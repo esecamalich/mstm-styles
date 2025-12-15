@@ -9,7 +9,6 @@ Quick summary:
 - Centralized design tokens in `src/tokens/` (colors, spacing, typography, etc.)
 - Theme layers in `src/themes/` (base, dark, sage)
 - Utility and component primitives in `src/utilities/`
-- New optional `src/foundations.css` bundle (tokens + utilities, no themes) for faster composition
 - A single entrypoint `src/global.css` that composes tokens, utilities and themes for a default bundle
 
 ## Installation
@@ -52,15 +51,6 @@ You can also import individual token files or theme layers if you want a smaller
 @import 'mstm-styles/src/utilities/layout.css';
 @import 'mstm-styles/src/themes/sage.css'; /* choose base, dark or sage */
 ```
-
-If you want tokens + utilities but prefer to pick your own theme, use the new foundations bundle:
-
-```css
-@import 'mstm-styles/src/foundations.css';
-@import 'mstm-styles/src/tokens/theme.css'; /* optional: pulls base + data-theme layers */
-```
-
-Utilities now include border-radius helpers mapped to the radius tokens: `.radius-none`, `.radius-xs`, `.radius-sm`, `.radius-md`, `.radius-lg`, `.radius-xl`, `.radius-2xl`, `.radius-full`.
 
 Notes:
 - Depending on how you install (npm registry vs GitHub source) and your bundler configuration, you may need to reference the `src/` paths directly. The repository ships the raw CSS source files.

@@ -2,10 +2,22 @@
    GLOBAL RESET & BASE STYLES for Hero UI
    ==================================================== */
 
-/* Load core token + utility bundle */
-@import './foundations.css';
-/* Load theme layers */
+/* Load core token layers */
+@import './tokens/colors.css';
+@import './tokens/radius.css';
+@import './tokens/shadows.css';
+@import './tokens/size.css';
+@import './tokens/spacing.css';
 @import './tokens/theme.css';
+@import './tokens/typography.css';
+
+@import './utilities/buttons.css';
+@import './utilities/color.css';
+@import './utilities/forms.css';
+@import './utilities/layout.css';
+@import './utilities/shadows.css';
+@import './utilities/spacers.css';
+@import './utilities/typography.css';
 
 /* ================== RESET ================== */
 
