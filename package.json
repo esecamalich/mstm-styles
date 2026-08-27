@@ -1,7 +1,7 @@
 {
   "name": "@mstm/mstm-styles",
   "version": "0.1.8",
-  "description": "Styles to Make Stuff That Matters",
+  "description": "MSTM Styles",
   "private": true,
   "keywords": [
     "css",
