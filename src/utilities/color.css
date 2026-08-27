@@ -1,3 +1,4 @@
+/* === COLORS === */
 .color-bg {
   background-color: var(--color-bg);
 }
@@ -14,6 +15,46 @@
   background-color: var(--color-brand-accent);
 }
 
+.color-bg-inverse {
+  background-color: var(--color-bg-inverse);
+}
+
+.color-surface {
+  background-color: var(--color-surface);
+}
+
+.color-surface-muted {
+  background-color: var(--color-surface-muted);
+}
+
+.color-surface-subtle {
+  background-color: var(--color-surface-subtle, var(--color-surface-muted, var(--color-surface)));
+}
+
+.color-overlay {
+  background-color: var(--color-overlay);
+}
+
+.color-overlay-light {
+  background-color: var(--color-overlay-light);
+}
+
+.color-bg-success {
+  background-color: var(--color-success);
+}
+
+.color-bg-warning {
+  background-color: var(--color-warning);
+}
+
+.color-bg-error {
+  background-color: var(--color-error);
+}
+
+.color-bg-disabled {
+  background-color: var(--color-disabled);
+}
+
 .color-text-black {
     color: var(--color-black);
 }
@@ -27,5 +68,21 @@ a:hover .color-text-black {
 }
 
 .color-text-subtle {
-    color: var(--color-text-subtle)
+    color: var(--color-text-subtle);
+}
+
+.color-text-success {
+  color: var(--color-success);
+}
+
+.color-text-warning {
+  color: var(--color-warning);
+}
+
+.color-text-error {
+  color: var(--color-error);
+}
+
+.color-text-disabled {
+  color: var(--color-disabled);
 }

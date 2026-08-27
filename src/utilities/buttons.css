@@ -1,3 +1,4 @@
+/* === BUTTONS === */
 .button {
   all: unset; /* full reset for both <a> and <button> */
   display: inline-flex;

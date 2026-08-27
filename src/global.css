@@ -1,6 +1,9 @@
-/* ====================================================
-   GLOBAL RESET & BASE STYLES for Hero UI
-   ==================================================== */
+/* 
+====================================================
+  GLOBAL RESET & BASE STYLES for MSTM STYLES
+  File: /src/styles/global.css
+==================================================== 
+*/
 
 /* Load core token layers */
 @import './tokens/colors.css';
@@ -15,6 +18,8 @@
 @import './utilities/color.css';
 @import './utilities/forms.css';
 @import './utilities/layout.css';
+@import './utilities/media.css';
+@import './utilities/radius.css';
 @import './utilities/shadows.css';
 @import './utilities/spacers.css';
 @import './utilities/typography.css';

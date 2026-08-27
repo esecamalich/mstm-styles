@@ -1,8 +1,4 @@
-/* ========================================
-   Hero UI Layout System — Client-First Inspired
-   File: /src/styles/utilities/layout.css
-   ======================================== */
-
+/* === LAYOUT HELPERS === */
 /* === SECTIONS === */
 .section { padding-block: var(--space-6xl); }
 
@@ -76,6 +72,8 @@
 
 /* Gap */
 .gap { gap: var(--space-md); } /* Default gap */
+.gap-4xs { gap: var(--space-4xs); }
+.gap-3xs { gap: var(--space-3xs); }
 .gap-none { gap: var(--space-0); }
 .gap-2xs { gap: var(--space-2xs); }
 .gap-xs { gap: var(--space-xs); }
@@ -88,6 +86,10 @@
 .gap-4xl { gap: var(--space-4xl); }
 .gap-5xl { gap: var(--space-5xl); }
 .gap-6xl { gap: var(--space-6xl); }
+.gap-7xl { gap: var(--space-7xl); }
+.gap-8xl { gap: var(--space-8xl); }
+.gap-9xl { gap: var(--space-9xl); }
+.gap-10xl { gap: var(--space-10xl); }
 
 /* === SPACING HELPERS === */
 
@@ -98,6 +100,10 @@
 .padding-lg { padding: var(--space-lg); }
 
 .padding-top--none { padding-top: var(--space-0); }
+.padding-top--md { padding-top: var(--space-md); }
+.padding-top--lg { padding-top: var(--space-lg); }
+.padding-top--xl { padding-top: var(--space-xl); }
+.padding-top--2xl { padding-top: var(--space-2xl); }
 .padding-top--3xl { padding-top: var(--space-3xl); }
 .padding-top--4xl { padding-top: var(--space-4xl); }
 .padding-top--5xl { padding-top: var(--space-5xl); }

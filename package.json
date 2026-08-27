@@ -38,7 +38,11 @@
     "./tokens/typography": "./src/tokens/typography.css",
     "./utilities/buttons": "./src/utilities/buttons.css",
     "./utilities/color": "./src/utilities/color.css",
+    "./utilities/forms": "./src/utilities/forms.css",
     "./utilities/layout": "./src/utilities/layout.css",
+    "./utilities/media": "./src/utilities/media.css",
+    "./utilities/radius": "./src/utilities/radius.css",
+    "./utilities/shadows": "./src/utilities/shadows.css",
     "./utilities/spacers": "./src/utilities/spacers.css",
     "./utilities/typography": "./src/utilities/typography.css"
   },

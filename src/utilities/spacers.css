@@ -1,9 +1,8 @@
-/* ========================================
-   Hero UI Spacer Utilities
-   File: /src/styles/utilities/spacers.css
-   ======================================== */
+/* === SPACERS === */
 
    .spacer-0     { margin: var(--space-0) 0; }
+   .spacer-4xs   { margin: var(--space-4xs) 0; }
+   .spacer-3xs   { margin: var(--space-3xs) 0; }
    .spacer-2xs   { margin: var(--space-2xs) 0; }
    .spacer-xs    { margin: var(--space-xs) 0; }
    .spacer-sm    { margin: var(--space-sm) 0; }
@@ -18,9 +17,12 @@
    .spacer-7xl   { margin: var(--space-7xl) 0; }
    .spacer-8xl   { margin: var(--space-8xl) 0; }
    .spacer-9xl   { margin: var(--space-9xl) 0; }
+   .spacer-10xl  { margin: var(--space-10xl) 0; }
    
    /* Shared Spacer Base Styles */
    .spacer-0,
+   .spacer-4xs,
+   .spacer-3xs,
    .spacer-2xs,
    .spacer-xs,
    .spacer-sm,
@@ -34,7 +36,8 @@
    .spacer-6xl,
    .spacer-7xl,
    .spacer-8xl,
-   .spacer-9xl {
+   .spacer-9xl,
+   .spacer-10xl {
      display: block;
      width: 100%;
      content: "";

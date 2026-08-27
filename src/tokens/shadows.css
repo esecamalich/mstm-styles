@@ -1,6 +1,5 @@
+/* === SHADOW TOKENS === */
 :root {
-  /* === SHADOW TOKENS === */
-
   --shadow-none: none;
 
   /* Subtle border-style shadow (often used on inputs or cards) */
