@@ -1,6 +1,6 @@
 /* === BUTTONS === */
 .button {
-  all: unset; /* full reset for both <a> and <button> */
+  /* all: unset; /* full reset for both <a> and <button> */
   display: inline-flex;
   align-items: center;
   justify-content: center;
