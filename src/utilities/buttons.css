@@ -32,8 +32,7 @@
 .product-card:hover .button--primary,
 .product-card:focus .button--primary {
   background-color: var(--color-button-primary-hover);
-  /* color: var(--color-button-primary-text); */
-  text-shadow: 0 0px 20px var(--color-brand-accent-contrast), 0 0px 10px var(--color-brand-accent-contrast)
+  color: var(--color-button-primary-text);
 }
 
 /* Button - Accent */

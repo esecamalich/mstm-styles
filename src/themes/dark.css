@@ -50,4 +50,14 @@
       --color-input-text: var(--color-text);
       --color-placeholder: var(--color-neutral-400);
 
+    /* Buttons */
+    .button--primary:hover, 
+    .button--primary:focus, 
+    .product-card:hover .button--primary,
+    .product-card:focus .button--primary {
+      background-color: var(--color-button-primary-hover);
+      /* color: var(--color-button-primary-text); */
+      text-shadow: 0 0px 20px var(--color-brand-accent-contrast), 0 0px 10px var(--color-brand-accent-contrast)
+    }
+
 }
