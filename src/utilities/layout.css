@@ -106,8 +106,10 @@
 .padding-4xl { padding: var(--space-4xl, 5rem); }
 .padding-5xl { padding: var(--space-5xl, 6rem); }
 .padding-6xl { padding: var(--space-6xl, 8rem); }
+/* .padding-global, .padding-6xl { padding: var(--space-6xl, 8rem); } */
 
 .padding-top--none { padding-top: var(--space-0); }
+.padding-top--sm { padding-top: var(--space-sm); }
 .padding-top--md { padding-top: var(--space-md); }
 .padding-top--lg { padding-top: var(--space-lg); }
 .padding-top--xl { padding-top: var(--space-xl); }
@@ -121,6 +123,11 @@
 .padding-top--9xl { padding-top: var(--space-9xl); }
 
 .padding-bottom--none { padding-bottom: var(--space-0); }
+.padding-bottom--sm { padding-bottom: var(--space-sm); }
+.padding-bottom--md { padding-bottom: var(--space-md); }
+.padding-bottom--lg { padding-bottom: var(--space-lg); }
+.padding-bottom--xl { padding-bottom: var(--space-xl); }
+.padding-bottom--2xl { padding-bottom: var(--space-2xl); }
 .padding-bottom--3xl { padding-bottom: var(--space-3xl); }
 .padding-bottom--4xl { padding-bottom: var(--space-4xl); }
 .padding-bottom--5xl { padding-bottom: var(--space-5xl); }
