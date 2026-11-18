@@ -95,9 +95,17 @@
 
 .padding-global { padding-inline: var(--space-md); }
 
-.padding-sm { padding: var(--space-sm); }
-.padding-md { padding: var(--space-md); }
-.padding-lg { padding: var(--space-lg); }
+.padding-none { padding: var(--space-0, 0); }
+.padding-xs { padding: var(--space-xs, 0.5rem); }
+.padding-sm { padding: var(--space-sm, 1rem); }
+.padding-md { padding: var(--space-md, 1.5rem); }
+.padding-lg { padding: var(--space-lg, 2rem); }
+.padding-xl { padding: var(--space-xl, 3rem); }
+.padding-2xl { padding: var(--space-2xl, 4rem); }
+.padding-3xl { padding: var(--space-3xl, 2.5rem); }
+.padding-4xl { padding: var(--space-4xl, 5rem); }
+.padding-5xl { padding: var(--space-5xl, 6rem); }
+.padding-6xl { padding: var(--space-6xl, 8rem); }
 
 .padding-top--none { padding-top: var(--space-0); }
 .padding-top--md { padding-top: var(--space-md); }
